@@ -1,0 +1,12 @@
+<div
+  class="flex justify-center"
+  *ngFor="let index of [].constructor(col); let i = index"
+>
+  <app-cell
+    *ngFor="let index of [].constructor(row); let j = index"
+    [x]="i"
+    [y]="j"
+    [curr_x]="curr_x"
+    [curr_y]="curr_y"
+  ></app-cell>
+</div>

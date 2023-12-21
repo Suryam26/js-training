@@ -1,0 +1,37 @@
+<app-board
+  [row]="row"
+  [col]="col"
+  [curr_x]="curr_x"
+  [curr_y]="curr_y"
+></app-board>
+
+<div class="flex flex-col m-8">
+  <div class="flex justify-center">
+    <button
+      (click)="move(-1, 0)"
+      class="w-16 h-16 hover:bg-gray-300 bg-gray-200 flex justify-center items-center rounded-lg m-2"
+    >
+      ↑
+    </button>
+  </div>
+  <div class="flex justify-center">
+    <button
+      (click)="move(0, -1)"
+      class="w-16 h-16 hover:bg-gray-300 bg-gray-200 flex justify-center items-center rounded-lg mx-2"
+    >
+      ←
+    </button>
+    <button
+      (click)="move(1, 0)"
+      class="w-16 h-16 hover:bg-gray-300 bg-gray-200 flex justify-center items-center rounded-lg mx-2"
+    >
+      ↓
+    </button>
+    <button
+      (click)="move(0, 1)"
+      class="w-16 h-16 hover:bg-gray-300 bg-gray-200 flex justify-center items-center rounded-lg mx-2"
+    >
+      →
+    </button>
+  </div>
+</div>
